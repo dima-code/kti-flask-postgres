@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}Success Page{% endblock %}
+{% block content %}
+<img src="{{ url_for('static', filename='uareamazing.jpg') }}" class="img-fluid" alt="uareamazing.jpg">
+<div class="mt-3"></div>
+<a href="{{ url_for('auth.logout') }}">Press here to logout</a>
+</div>
+{% endblock %}
